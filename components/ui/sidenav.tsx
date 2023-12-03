@@ -23,7 +23,7 @@ const SideNav = () => {
 
   // Liste des éléments du menu latéral
   const sideList = [
-    { title: "Home" , href:'../Casino' },
+    { title: "Jouer" , href:'../Casino' },
     { title: "Historique", href:'../Casino/historique'},
     { title: "Paiement", href:'../Casino/paiement' },
     { title: "Deconnexion", href:'' },

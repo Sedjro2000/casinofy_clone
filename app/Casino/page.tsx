@@ -13,7 +13,10 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import RandomNumberGenerator from "@/components/RandomNumberGenerator";
 
-
+interface SelectProps {
+  
+  id?: string; 
+ }
 
 
   
@@ -33,9 +36,8 @@ const Casino = () => {
       <div className="mb-4">
       <label  htmlFor="Mise" className="block text-gray-700 text-sm font-bold mb-2 mt-4">Mise:</label>
       </div>
-    
-    <Select id="Mise"
-            className="shadow border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline">
+  
+    <Select>
       <SelectTrigger className="w-[180px]">
         <SelectValue placeholder="100 FCFA" />
       </SelectTrigger>
@@ -53,13 +55,13 @@ const Casino = () => {
         </SelectGroup>
       </SelectContent>
     </Select>
+    
         {/*Les entree du joueur  */}
         <div className="mb-4">
         <label htmlFor="nombreDeChiffres" className="block text-gray-700 text-sm font-bold mb-2 mt-4">Nombre de chiffres:</label>
         </div>
        
-    <Select id="nombreDeChiffres"
-            className="shadow border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline">
+    <Select>
       <SelectTrigger className="w-[200px]">
         <SelectValue placeholder="2 → Gains: Mise*10%" />
       </SelectTrigger>
@@ -81,8 +83,7 @@ const Casino = () => {
         <div className="mb-4">
         <label htmlFor="VitesseDesAnneaux" className="block text-gray-700 text-sm font-bold mb-2 mt-4">Vitesse des anneaux:</label>
         </div>
-    <Select id="VitesseDesAnneaux"
-            className="shadow border rounded w-full py-2 px-3 focus:outline-none focus:shadow-outline">
+    <Select>
       <SelectTrigger className="w-[280px]">
         <SelectValue placeholder="1 chiffre/seconde → -98%*Gains" />
       </SelectTrigger>
